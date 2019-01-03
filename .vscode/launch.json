@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TwoSum",
+            "request": "launch",
+            "mainClass": "leetcode.Amazon.TwoSum",
+            "projectName": "codelab-fb-interview"
+        }
+    ]
+}
