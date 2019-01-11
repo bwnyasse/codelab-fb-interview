@@ -1,4 +1,4 @@
-package leetcode.Amazon;
+package leetcode.Amazon.easy;
 
 import java.util.HashMap;
 

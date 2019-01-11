@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ValidParentheses",
+            "request": "launch",
+            "mainClass": "leetcode.Amazon.easy.ValidParentheses",
+            "projectName": "codelab-fb-interview"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Sorting",
+            "request": "launch",
+            "mainClass": "leetcode.Amazon.topcoder.Sorting",
+            "projectName": "codelab-fb-interview"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestSubstringWithoutRepeatingCharacters",
+            "request": "launch",
+            "mainClass": "leetcode.Amazon.LongestSubstringWithoutRepeatingCharacters",
+            "projectName": "codelab-fb-interview"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "revbits.Solution",
+            "projectName": "codelab-fb-interview"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AddTwoNumbers",
+            "request": "launch",
+            "mainClass": "leetcode.Amazon.AddTwoNumbers",
+            "projectName": "codelab-fb-interview"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TwoSum",
             "request": "launch",
             "mainClass": "leetcode.Amazon.TwoSum",
