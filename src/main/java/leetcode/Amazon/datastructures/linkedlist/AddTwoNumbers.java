@@ -1,4 +1,4 @@
-package leetcode.Amazon.medium;
+package leetcode.Amazon.datastructures.linkedlist;
 
 /**
  * AddTwoNumbers
