@@ -1,0 +1,56 @@
+package leetcode.Amazon.datastructures.linkedlist;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.PriorityQueue;
+
+import leetcode.Amazon.common.ListNode;
+
+/**
+ * MergeKSortedLists
+ */
+public class MergeKSortedLists {
+
+    public static void main(String[] args) {
+
+    }
+
+    public static ListNode mergeKLists(ListNode[] lists) {
+
+        if (lists == null || lists.length == 0)
+            return null;
+
+        PriorityQueue<ListNode> queue = new PriorityQueue<>(lists.length, new Comparator<ListNode>() {
+
+            @Override
+            public int compare(ListNode o1, ListNode o2) {
+                if (o1.val < o2.val)
+                    return -1;
+                else if (o1.val == o2.val)
+                    return 0;
+                else
+                    return 1;
+            }
+        });
+
+        for (ListNode node : lists)
+            if (node != null)
+                queue.add(node);
+
+        ListNode dummy = new ListNode(0);
+        ListNode tail=dummy;
+        while (!queue.isEmpty()) {
+            tail.next = queue.poll();
+            tail = tail.next;
+
+            if (tail.next != null)
+                queue.add(tail.next);
+        }
+
+        return dummy.next;
+    }
+
+
+}
